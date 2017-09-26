@@ -1,0 +1,11 @@
+function autocomplete(input, dict){
+  input=input.replace(/[^a-zA-Z-]/g, '');
+  output = [];
+  for (i=0; i<dict.length; i++){
+    if (input.toUpperCase().localeCompare(dict[i].substring
+      (0,input.length).toUpperCase())===0 && output.length<5) {
+      output.push(dict[i]);
+    }
+  }
+  return output;
+}

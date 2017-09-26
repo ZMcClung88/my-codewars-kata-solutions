@@ -1,0 +1,10 @@
+const bandNameGenerator = (str) => {
+  let strArr = str.split('');
+  console.log(strArr);
+  if(strArr[0] !== strArr[strArr.length - 1]) {
+    return 'The ' + strArr[0].toUpperCase() + str.slice(1);
+  }
+  else{
+    return strArr[0].toUpperCase() + str.slice(1, str.length - 1) + str;
+  }
+};
