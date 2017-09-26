@@ -1,0 +1,19 @@
+const or = (a, b) => {
+  // your code here :)
+  if(a) {
+    return true;
+  }else if(b) {
+    return true;
+  }
+  return false;
+};
+
+const xor = (a, b) => {
+  // your code here :)
+  if(a && !b){
+    return true;
+  } else if(!a && b){
+    return true;
+  }
+  return false;
+};

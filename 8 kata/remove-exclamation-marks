@@ -1,0 +1,11 @@
+function removeExclamationMarks(s) {
+ var string = s.split("");
+ var arr = [];
+
+ for(var i = 0; i < s.length; i++) {
+   if(string[i] !== '!') {
+   arr.push(string[i]);
+   }
+ }
+ return arr.join("");
+}

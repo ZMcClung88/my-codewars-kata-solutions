@@ -1,0 +1,1 @@
+let removeUrlAnchor = (url) => url.split('#')[0];
