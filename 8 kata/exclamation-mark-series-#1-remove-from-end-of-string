@@ -1,0 +1,4 @@
+function remove(s){
+  //coding and coding....
+  return (s.slice(-1) == '!') ? s.substring(0, s.length - 1) : s;
+}

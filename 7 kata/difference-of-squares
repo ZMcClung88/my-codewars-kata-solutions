@@ -1,0 +1,12 @@
+function differenceOfSquares(x){
+  // ...
+  let squareSum = 0;
+  let sumOfSquares = 0;
+  for(var i = 1; i <= x; i++) {
+    squareSum += i;
+  }
+  for(var j = 1; j <= x; j++) {
+    sumOfSquares += j * j;
+  }
+  return squareSum * squareSum - sumOfSquares
+}

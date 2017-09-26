@@ -1,0 +1,9 @@
+// Sum Numbers
+function sum (numbers) {
+    console.log(numbers)
+    var result = 0;
+    numbers.map(function(n){
+      result += n;
+    })
+    return result;
+}

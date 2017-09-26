@@ -1,0 +1,13 @@
+function sortMyString(S) {
+    // your code here
+    let even = [];
+    let odd = [];
+    for(var i = 0; i < S.length; i++){
+      if(i % 2 === 0) {
+        even.push(S[i]);
+      } else {
+        odd.push(S[i]);
+      }
+    }
+    return even.join('') + ' ' + odd.join('');
+}
