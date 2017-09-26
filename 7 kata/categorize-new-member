@@ -1,0 +1,13 @@
+function openOrSenior(data){
+  // ...
+  let results = [];
+  data.map((mem) => {
+    if(mem[0] >= 55 && mem[1] > 7) {
+      results.push('Senior');
+    }
+    else {
+      results.push('Open');
+    }
+  });
+  return results;
+}

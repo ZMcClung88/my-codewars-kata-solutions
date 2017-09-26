@@ -1,0 +1,6 @@
+function differenceInAges(ages){
+  let oldest = Math.max(...ages);
+  let youngest = Math.min(...ages);
+  let ageDiff = oldest - youngest;
+  return [youngest, oldest, ageDiff];
+}
