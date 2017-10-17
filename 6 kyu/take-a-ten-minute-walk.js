@@ -22,5 +22,5 @@ const isValidWalk = walk => {
     if (dir === 'w') we += 1;
     if (dir === 'e') we -= 1;
   }
-  return walk.length == 10 && ns === 0 && we === 0;
+  return walk.length === 10 && ns === 0 && we === 0;
 }
