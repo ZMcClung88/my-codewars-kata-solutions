@@ -35,7 +35,7 @@ const maxSequence = arr => {
 };
 
 ///////////////////   BEST PRACTICES  //////////////////////////
-ar maxSequence = function(arr){
+var maxSequence = function(arr){
   var min = 0, ans = 0, i, sum = 0;
   for (i = 0; i < arr.length; ++i) {
     sum += arr[i];
