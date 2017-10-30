@@ -6,3 +6,10 @@
 // solution(null); // should return []
 
 const solution = nums => nums === null ? [] : nums.sort((a,b) => {return a-b});
+
+///////////////////   BEST PRACTICES  //////////////////////////
+function solution(nums){
+  return (nums || []).sort(function(a, b){
+    return a - b
+  });
+}
