@@ -10,3 +10,9 @@ const capMe = (names) => {
     return name.substr(0,1).toUpperCase() + name.substr(1).toLowerCase();
   })
 }
+
+
+//////////////// BEST PRACTICE //////////////////////
+function capMe(names) {
+  return names.map(function (n) { return n.charAt(0).toUpperCase() + n.substring(1).toLowerCase(); });
+}
