@@ -16,3 +16,9 @@ const bonusTime = (salary, bonus) => {
     return result.toString();
   }
 }
+
+
+//////////////// BEST PRACTICE //////////////////////
+function bonusTime(salary, bonus) {
+  return bonus ? `£${10 * salary}` : `£${salary}`;
+}
