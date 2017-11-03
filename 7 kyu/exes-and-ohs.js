@@ -5,7 +5,7 @@
 // XO("ooxx") => true
 // XO("xooxx") => false
 // XO("ooxXm") => true
-// XO("zpzpzpp") => true // 
+// XO("zpzpzpp") => true //
 
 const XO = str => {
     //code here
@@ -32,4 +32,12 @@ const XO = str => {
     }
 
     return result;
+}
+
+
+//////////////// BEST PRACTICE //////////////////////////
+function XO(str) {
+  let x = str.match(/x/gi);
+  let o = str.match(/o/gi);
+  return (x && x.length) === (o && o.length);
 }
