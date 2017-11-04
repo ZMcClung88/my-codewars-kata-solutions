@@ -14,3 +14,13 @@ const preFizz = (n) => {
   // 'Array should be between 1 to ' + n.length;
   return nArr;
 }
+
+//////////////// BEST PRACTICE //////////////////////////
+function preFizz(n) {
+  var output = [];
+  for (var i=1; i<=n; i++)
+  {
+    output.push(i);
+  }
+  return output;
+}
