@@ -5,3 +5,6 @@
 sortme = function( names ){
   return names.sort();
 }
+
+/////////// BEST PRACTICE /////////////////
+sortme = Array.sort;
