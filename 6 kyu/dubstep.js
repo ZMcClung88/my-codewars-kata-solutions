@@ -32,3 +32,8 @@ const songDecoder = (song) => {
   })
   return results.trim();
 }
+
+//////////// BEST PRACTICE //////////////
+function songDecoder(song){
+  return song.replace(/(WUB)+/g," ").trim()
+}
