@@ -28,3 +28,11 @@ const removeSmallest = numbers => {
   numbers.splice(numbers.indexOf(smallestNum), 1);
   return numbers;
 }
+
+
+
+//////////// BEST PRACTICE //////////////
+function removeSmallest(numbers) {
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
+}
