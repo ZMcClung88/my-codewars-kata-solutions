@@ -20,3 +20,10 @@ class SmallestIntegerFinder {
     return temp;
   }
 }
+
+//////////// BEST PRACTICE //////////////
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)
+  }
+}
