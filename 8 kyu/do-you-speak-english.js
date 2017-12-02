@@ -7,3 +7,8 @@
 // Return value as boolean values, true for the string to contains "English", false for it does not.
 
 const spEng = (sentence) => sentence.toLowerCase().includes('english');
+
+/////////// BEST PRACTICE //////////////
+function spEng(s){
+   return /english/i.test(s)
+}
