@@ -8,3 +8,9 @@ const arrayPlusArray = (arr1, arr2) => {
   joinArr.map(num => sum += num);
   return sum;
 }
+
+///////////// BEST PRACTICE ////////////////
+const arrayPlusArray = (arr1, arr2) => arr1.concat(arr2).reduce((acc, cur) => acc += cur)
+
+//or
+arrayPlusArray = (arr1, arr2) => arr1.concat(arr2).reduce((acc, cur) => acc += cur)
