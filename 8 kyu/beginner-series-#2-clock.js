@@ -16,3 +16,10 @@ const past = (h, m, s) => {
 
   return secMil + minMil + hourMil;
 }
+
+
+
+///////////// BEST PRACTICE ////////////////
+function past(h, m, s){
+  return ((h*3600)+(m*60)+s)*1000;
+}
