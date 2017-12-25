@@ -19,3 +19,16 @@ var scoobydoo = new Dog("Great Dane");
 scoobydoo.bark = function() {
   return "Woof";
 }
+
+///////////// BEST PRACTICE ////////////////
+function Dog (breed) {
+  this.breed = breed;
+  this.bark = function(){ return "Woof"};
+}
+
+var snoopy = new Dog("Beagle");
+
+snoopy.bark();
+
+var scoobydoo = new Dog("Great Dane");
+scoobydoo.bark();
