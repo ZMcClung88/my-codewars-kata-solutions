@@ -9,3 +9,6 @@
 // ' are '
 
 const TempleStrings = (obj, feature) => obj + ' are ' + feature;
+
+//// BEST PRACTICE ////
+let TempleStrings = (obj, feature) => `${obj} are ${feature}`;
