@@ -14,3 +14,6 @@ const redarr = arr => [...new Set(arr.sort())].reduce((acc, cur, i) => {
   acc[i] = cur;
   return acc;
 }, {})
+
+//////////// CLEVER PRACTICE \\\\\\\\\\\\
+arr = n => n ? [...Array(n).keys()] : [];
