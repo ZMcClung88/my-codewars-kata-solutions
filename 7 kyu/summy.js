@@ -14,3 +14,6 @@ const summy = stringOfInts => {
   })
   return results;
 };
+
+//////////// BEST PRACTICE \\\\\\\\\\\\
+const summy = s => s.split(' ').map(Number).reduce((a,b)=>a+b,0)
