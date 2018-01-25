@@ -9,3 +9,6 @@
 // typeValidation("42", "number"); // => false
 
 const typeValidation = (variable, type) => typeof(variable) === type ? true : false;
+
+//////////// BEST PRACTICE \\\\\\\\\\\\
+const typeValidation = (variable, type) => typeof variable === type ;
