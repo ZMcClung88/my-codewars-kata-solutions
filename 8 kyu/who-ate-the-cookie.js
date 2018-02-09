@@ -18,3 +18,10 @@ const cookie = x => {
     return 'Who ate the last cookie? It was the dog!';
   }
 };
+
+//////////// BEST PRACTICE \\\\\\\\\\\\
+const cookie = x => {
+  var t = typeof x;
+  var who = t == 'string' ? 'Zach' : t == 'number' ? 'Monica' : 'the dog';
+  return `Who ate the last cookie? It was ${who}!`;
+};
