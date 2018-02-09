@@ -18,3 +18,10 @@ const sumDigits = number => {
 
   return results;
 };
+
+//////////// BEST PRACTICE \\\\\\\\\\\\
+const sumDigits = number => {
+  return Math.abs(number).toString().split('').reduce(function(a, b) {
+    return +a + +b;
+  }, 0);
+};
