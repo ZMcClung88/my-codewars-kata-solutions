@@ -9,7 +9,7 @@
 
 const betterThanAverage = (classPoints, yourPoints) => {
   // Your code here
-  let avg = classPoints.reduce((acc,cur) => acc += cur)/classPoints.length;
+  var avg = classPoints.reduce((acc,cur) => acc += cur)/classPoints.length;
 
   return yourPoints > avg ? true : false;
 }
