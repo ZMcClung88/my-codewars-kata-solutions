@@ -13,3 +13,5 @@ const betterThanAverage = (classPoints, yourPoints) => {
 
   return yourPoints > avg ? true : false;
 }
+
+//testing
