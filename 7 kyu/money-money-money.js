@@ -38,7 +38,7 @@ const calculateYears = (principal, interest, tax, desired) => {
   return getComp(principal, interest, tax, desired);
 };
 
-//////////// BEST PRACTICE \\\\\\\\\\\\
+///////////// BEST PRACTICE \\\\\\\\\\\\\
 function calculateYears(principal, interest, tax, desired) {
   // your code
   var years = 0;
