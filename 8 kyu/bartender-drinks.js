@@ -13,17 +13,19 @@
 // Make sure you cover the cases where certain words do not show up with correct capitalization. For example, getDrinkByProfession("pOLitiCIaN") should still return "Your tax dollars".
 
 const getDrinkByProfession = param => {
-  if (param.toLowerCase() === 'jabroni') {
+  let text = param.toLowerCase();
+
+  if (text === 'jabroni') {
     return 'Patron Tequila';
-  } else if (param.toLowerCase() === 'school counselor') {
+  } else if (text === 'school counselor') {
     return 'Anything with Alcohol';
-  } else if (param.toLowerCase() === 'programmer') {
+  } else if (text === 'programmer') {
     return 'Hipster Craft Beer';
-  } else if (para.toLowerCase() === 'biker gang memeber') {
+  } else if (text === 'biker gang memeber') {
     return 'Moonshine';
-  } else if (param.toLowerCase() === 'politician') {
+  } else if (text === 'politician') {
     return 'Your tax dollars';
-  } else if (param.toLowerCase() === 'rapper') {
+  } else if (text === 'rapper') {
     return 'Cristal';
   } else {
     return 'Beer';
