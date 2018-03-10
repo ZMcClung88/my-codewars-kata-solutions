@@ -19,3 +19,6 @@ const describeAge = age => {
     (age <= 12 ? 'kid' : age >= 13 && age <= 17 ? 'teenager' : age >= 18 && age <= 64 ? 'adult' : 'elderly')
   );
 };
+
+////////// ANOTHER EXAMPLE (notice the use of template literal)\\\\\\\\\\
+var describeAge = a => `You're a(n) ${a < 13 ? 'kid' : a < 18 ? 'teenager' : a < 65 ? 'adult' : 'elderly'}`;
