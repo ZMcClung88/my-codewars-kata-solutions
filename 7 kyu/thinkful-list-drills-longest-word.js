@@ -17,6 +17,7 @@ const longest = words => {
   return longLength;
 };
 
+////////// ANOTHER EXAMPLE \\\\\\\\\\
 function longest(words) {
   return words.reduce((a, b) => Math.max(a, b.length), 0);
 }

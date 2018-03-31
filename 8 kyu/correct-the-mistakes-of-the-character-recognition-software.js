@@ -10,3 +10,8 @@
 // The test cases contain numbers only by mistake.
 
 const correct = string => string.replace(/0/g, 'O').replace(/1/g, 'I').replace(/5/g, 'S');
+
+////////// ANOTHER EXAMPLE \\\\\\\\\\
+function correct(string) {
+  return [...string].map(a => ({ '0': 'O', '5': 'S', '1': 'I' }[a] || a)).join('');
+}
