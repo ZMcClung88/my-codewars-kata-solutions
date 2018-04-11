@@ -10,3 +10,8 @@ const chromosomeCheck = sperm =>
   sperm.includes('Y')
     ? "Congratulations! You're going to have a son."
     : "Congratulations! You're going to have a daughter.";
+
+////////// ANOTHER EXAMPLE \\\\\\\\\\
+function chromosomeCheck(sperm) {
+  return `Congratulations! You're going to have a ${sperm === 'XX' ? 'daughter' : 'son'}.`;
+}
