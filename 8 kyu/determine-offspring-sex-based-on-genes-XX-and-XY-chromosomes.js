@@ -15,3 +15,6 @@ const chromosomeCheck = sperm =>
 function chromosomeCheck(sperm) {
   return `Congratulations! You're going to have a ${sperm === 'XX' ? 'daughter' : 'son'}.`;
 }
+
+////////// ANOTHER EXAMPLE \\\\\\\\\\
+chromosomeCheck = s => `Congratulations! You're going to have a ${s[1] == 'X' ? 'daughter' : 'son'}.`;
