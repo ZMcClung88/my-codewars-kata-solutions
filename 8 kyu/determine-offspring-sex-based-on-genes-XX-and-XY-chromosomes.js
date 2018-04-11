@@ -12,9 +12,14 @@ const chromosomeCheck = sperm =>
     : "Congratulations! You're going to have a daughter.";
 
 ////////// ANOTHER EXAMPLE \\\\\\\\\\
-function chromosomeCheck(sperm) {
+const chromosomeCheck = sperm => {
   return `Congratulations! You're going to have a ${sperm === 'XX' ? 'daughter' : 'son'}.`;
-}
+};
 
 ////////// ANOTHER EXAMPLE \\\\\\\\\\
 chromosomeCheck = s => `Congratulations! You're going to have a ${s[1] == 'X' ? 'daughter' : 'son'}.`;
+
+////////// ANOTHER EXAMPLE \\\\\\\\\\
+const chromosomeCheck = sperm => {
+  return `Congratulations! You're going to have a ${sperm === 'XY' ? 'son' : 'daughter'}.`;
+};
