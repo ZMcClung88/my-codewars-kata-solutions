@@ -35,3 +35,6 @@ function modifyMultiply(str, loc, num) {
     result = words[loc] ? (words[loc] + '-').repeat(num) : '';
   return result.slice(0, -1);
 }
+
+////////// ANOTHER EXAMPLE \\\\\\\\\\
+const modifyMultiply = (str, loc, num) => Array(num).fill(str.split(' ')[loc]).join('-');
