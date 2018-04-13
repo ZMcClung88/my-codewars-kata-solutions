@@ -28,3 +28,10 @@ const modifyMultiply = (str, loc, num) => {
 function modifyMultiply(str, i, n) {
   return Array(n).fill(str.split(' ')[i]).join('-');
 }
+
+////////// ANOTHER EXAMPLE \\\\\\\\\\
+function modifyMultiply(str, loc, num) {
+  var words = str.split(' '),
+    result = words[loc] ? (words[loc] + '-').repeat(num) : '';
+  return result.slice(0, -1);
+}
