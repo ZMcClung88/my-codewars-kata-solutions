@@ -23,3 +23,8 @@ const modifyMultiply = (str, loc, num) => {
   }
   return results.join('-');
 };
+
+////////// ANOTHER EXAMPLE \\\\\\\\\\
+function modifyMultiply(str, i, n) {
+  return Array(n).fill(str.split(' ')[i]).join('-');
+}
