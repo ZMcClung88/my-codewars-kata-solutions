@@ -8,3 +8,8 @@
 // Input will always be an positive integer, so don't worry about type checking or negative/float values.
 
 const toCurrency = price => price.toFixed().replace(/(\d)(?=(\d{3})+(,|$))/g, '$1,');
+
+////////// ANOTHER EXAMPLE \\\\\\\\\\
+function toCurrency(price) {
+  return price.toLocaleString();
+}
