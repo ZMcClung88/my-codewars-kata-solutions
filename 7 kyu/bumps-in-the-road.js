@@ -10,3 +10,6 @@ const bump = x => {
   let count = [...x].filter(char => char === 'n').length;
   return count < 15 ? 'Woohoo!' : 'Car Dead';
 };
+
+////////// BEST PRACTICE SOLUTION \\\\\\\\\\
+const bump = x => (x.split('n').length > 16 ? 'Car Dead' : 'Woohoo!');
